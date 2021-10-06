@@ -1,0 +1,21 @@
+.footer {
+    padding: 80px 0;
+    background: #f7f7f7;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__icon {
+        transition: all 0.3s ease-in-out;
+        & + & {
+            margin-left: 15px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            filter: brightness(85%);
+        }
+    }
+}

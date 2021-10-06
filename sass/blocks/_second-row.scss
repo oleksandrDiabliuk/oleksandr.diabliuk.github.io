@@ -1,0 +1,63 @@
+.second-row {
+    display: flex;
+    min-height: 600px;
+
+    @include media(to-desktop) {
+        flex-direction: column;   
+    }
+    
+    &__right {
+        position: relative;
+        background: url('../img/img-bike-1.png') center center/cover no-repeat;
+        width: calc(#{percentage(2 / 3)});
+
+        @include media(to-desktop) {
+            width: 100%;  
+            height: 600px; 
+        }
+    }
+    
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: calc(#{percentage(1 / 2)});
+
+        @include media(to-desktop) {
+            width: 100%;  
+        }
+    }
+
+    &__content {
+        height: 100%;
+        padding: 4vw;
+
+        @include media(to-desktop) {
+            padding: 10vw 4vw;
+        }
+    }
+
+    &__icon {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__title {
+        @include title;
+    }
+    
+    &__text {
+        position: relative;
+        @include text(left, 16px);
+        @include divider;
+    }
+    
+    &__img {
+        background: url('../img/img-saddle-2.png') center center/cover no-repeat;
+        height: 100%;
+
+        @include media(to-desktop) {
+            height: 200px;
+        }
+    }
+}

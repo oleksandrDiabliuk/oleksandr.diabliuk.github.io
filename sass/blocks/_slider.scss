@@ -1,0 +1,60 @@
+.slider {
+    background: #f7f7f7;
+    padding: 115px 0;
+
+    &__slide {
+        padding-bottom: 50px;
+    }
+    
+    &__icon {
+        margin: 0 auto;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 35px;
+    }
+
+    &__span {
+        color: #848789;
+        font-weight: 300;
+    }
+
+    &__text {
+        font-style: italic;
+        color: #848789;
+        line-height: 24px;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 800px;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+}
+
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+        list-style: none;
+    }
+    
+    li + li {
+        margin-left: 10px;
+    }
+    
+    button {
+        cursor: pointer;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        border: 1px solid #a9afb3;
+        font-size: 0;
+    }
+    
+    .slick-active button {
+        background: #a9afb3;
+    }
+}

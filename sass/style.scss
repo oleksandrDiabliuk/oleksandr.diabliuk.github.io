@@ -1,0 +1,34 @@
+@import 'base/variables';
+@import 'base/mixins';
+@import 'fonts/fonts';
+@import 'base/keyframes';
+
+* {
+    font-family: 'Lato-Regular', sans-serif;
+    box-sizing: border-box;     
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 660px;
+    padding: 0 20px;
+    margin: 0 auto;
+    
+    @include media(mobile) {
+        max-width: 100%;
+        width: 100%
+    }
+}
+
+@import 'blocks/home';
+@import 'blocks/header';
+@import 'blocks/about';
+@import 'blocks/works';
+@import 'blocks/slider';
+@import 'blocks/shop';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+@import 'blocks/first-row';
+@import 'blocks/second-row';
+@import 'blocks/third-row';
